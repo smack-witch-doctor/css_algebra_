@@ -69,6 +69,77 @@ background-color: lightgreen;
     font-weight: bolder;
     background-color:orange;
 }
+
+p::after{
+    content:"-zapamti!";     /*ovo je primjer za after*/
+    color: darkred;
+}
+
+.kk p::before{
+
+    content:"zapamti ovo-";
+    color: brown;            /*ovo je primjer za befote*/   
+}
+
+
+p::first-letter, h1::first-letter{
+    color:rebeccapurple;
+    font-size: xx-large;     /*primjer za first-letter*/
+}
+
+
+
+/*od ovog dijela sve je proba*/
+h1::first-line{
+    color: blue;
+}
+
+ul::marker{
+    color: brown;
+    font-size: x-large;
+    list-style-type:armenian;
+}
+
+div::selection{
+
+    color: cornflowerblue;
+    background-color: burlywood;
+}
+
+.veliko::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+
+.drugi ol {
+    list-style-type: lower-alpha;
+}
+
+ol::marked{
+    color:red;
+}
+
+span::after{
+content:"\2713";
+font-weight: 900;
+}
+
+a::before{
+content:"\2023";
+font-size: 24px;
+}
+
+a:link{
+    color: red;
+    text-decoration: underline;
+}
+hr {border: dotted 2px red;}
+
+ul.g {
+    list-style: none;
+}
+
+
     </style>
 </head>
 <body>
@@ -174,6 +245,48 @@ div:first-child
 <p class="kk"> paragraf klase kk</p>
 <div class="kk">5. div klase kk</div>
 </section>
+
+
+
+
+<div class="prvi">
+<h1 class="veliko">1 Koji je glavni grad hrvatske?</h1>
+<ol>
+<li>
+Koprivnica
+</li>
+<li>Osijek</li>
+<li><span>Zagreb<span></li>
+</ol>
+</div>
+
+<p></p>
+
+<div class="drugi">
+<h1 class="veliko">2 Koja je rijeka koja protječe kroz Hrvatsku najduža?</h1>
+<ol>
+    <li>
+    Mura
+    </li>
+    <li><span>Sava</span></li>
+    <li>Drava</li>
+    </ol>
+</div>
+
+<p></p>
+    
+<div class="treci">
+    <h1 class="veliko">3 Pogledajte sljedece video linkove</h1>
+    <ul class="g">
+        <li><a href="">
+        Play bass guitar
+        </a>
+        </li>
+        <li><a>Stop eating sugar</a></li>
+        <li>Treci</li>
+        </ul>
+</div>  
+
 
 </body>
 </html>
